@@ -1,0 +1,14 @@
+
+import qrcode
+from tkinter import*
+a=Tk()
+a.title("skayner")
+e = Entry(a,bg="blue",fg="red")
+e.pack()
+def s ():
+    griga = qrcode.make(e.get())
+    griga.save("skayner.png")
+b=Button(a,text="ur",command = s,width=44)
+b.pack()
+a.mainloop()
+

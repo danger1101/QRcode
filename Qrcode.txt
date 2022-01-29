@@ -1,0 +1,9 @@
+
+import qrcode
+
+matn_kiriting = input("url yoki matiningizni kiriting: ")
+
+
+qrimg = qrcode.make(matn_kiriting)
+
+qrimg.save("qrcode1.png")
